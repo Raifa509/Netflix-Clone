@@ -3,3 +3,9 @@
     margin: 0%;
     font-family: sans-serif;
 }
+#home-head{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+}

@@ -17,7 +17,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     <!-- tailwind -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -31,32 +31,73 @@
         <section class="relative w-full h-screen">
             <div class="w-full h-screen bg-[url(./media/home_img.jpg)] absolute inset-0 bg-cover z-0"></div>
             <!-- black overlay -->
-            <div class="absolute inset-0 bg-black opacity-65 z-0"></div>
-            <div class="w-full h-[15%] relative z-10 flex justify-around">
-                <img src="./media/netflix_name.png" alt="" width="200px">
-                <div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <span><img src="https://cdn-icons-png.flaticon.com/128/565/565635.png" alt="" width="20px" height="20px"></span>
-                            Dropdown button
+            <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/80 via-black/65 to-black/80"></div>
+            <!-- nav section -->
+            <div class="w-full h-[15%] relative z-10 px-4">
+                <div class="max-w-7xl mx-auto flex justify-between items-center w-full px-4 md:px-8">
+                    <div class="">
+                        <img src="./media/netflix_name.png" alt="" width="190px" />
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="dropdown">
+                            <button class="border ms-5 px-3 py-1 dropdown-toggle text-white flex items-center"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                style="border-radius: 0.2rem; border-color: gray !important;">
+                                <span class="me-2">
+                                    <img src="./media/translate.png" alt="" width="16px" />
+                                </span>
+                                <span class="me-2 text-sm">English</span>
+                            </button>
+                            <ul class="dropdown-menu text-center" style="width: 132px; min-width: unset;">
+                                <li><a class="dropdown-item text-black" href="#">العربية</a></li>
+                                <li><a class="dropdown-item text-white bg-primary" href="#">English</a></li>
+                            </ul>
+                        </div>
+                        <button
+                            class="bg-red-600 font-semibold text-sm text-white px-[1rem] py-[0.35rem] text-center hover:bg-red-700 transition"
+                            style="border-radius: 0.3rem;">
+                            Sign In
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+            <!-- Heading section -->
+            <div
+                class="px-2 py-1 h-auto " id="home-head">
+                <div class="flex flex-col items-center ">
+                    <h1 class="text-white text-6xl text-center font-bold tracking-tight">Unlimited movies, TV shows, and more</h1>
+                    <h4 class="text-white text-xl font-bold text-center leading-[75px]">Starts at AED 35. Cancel
+                        anytime.</h4>
+                    <h6 class="text-white text-md text-center mt-3 ">Ready to watch? Enter your email to create or
+                        restart
+                        your membership.</h6>
+
+                    <div class="flex mt-3 w-full item-center justify-center">
+                        <input type="email" placeholder="Email address"
+                            class="w-[50%] px-3 py-3 bg-transparent border border-gray-600 !border-[#8c8c8c] placeholder:opacity-95 text-white placeholder-[#8c8c8c] text-semibold rounded-sm focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-1 focus:ring-offset-black" />
+
+
+
+
+                        <button
+                            class="bg-red-600 font-semibold text-2xl text-white px-[1rem] py-[0.35rem] text-center hover:bg-red-700 transition w-[25%] flex items-center justify-center mx-2"
+                            style="border-radius: 0.3rem;">
+                            Get Started <span><img src="./media/chevron.png" alt="" width="15px"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    </section>
 
 
 
 
 
 
-        <!-- last div -->
+    <!-- last div -->
     </div>
 </body>
 
