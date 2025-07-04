@@ -26,10 +26,11 @@
 </head>
 
 <body>
+    
     <div>
         <!-- home -->
-    <section class="relative w-full h-screen">
-            <div class="w-full h-screen bg-[url(./media/home_img.jpg)] absolute inset-0 bg-cover z-0"></div>
+        <section class="relative w-full min-h-[120vh]">
+            <div class="w-full min-h-[120vh] bg-[url(./media/home_img.jpg)] absolute inset-0 bg-cover z-0"></div>
             <!-- black overlay -->
             <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/80 via-black/65 to-black/80"></div>
             <!-- nav section -->
@@ -63,8 +64,9 @@
             </div>
             <!-- Heading section -->
             <div class="px-2 py-1 h-auto " id="home-head">
-                <div class="flex flex-col items-center ">
-                    <h1 class="text-white text-6xl text-center font-bold tracking-tight">Unlimited movies, TV shows, and more</h1>
+                <div class="flex flex-col items-center">
+                    <h1 class="text-white text-6xl text-center font-bold tracking-tight">Unlimited movies, TV shows, and
+                        more</h1>
                     <h4 class="text-white text-xl font-bold text-center leading-[75px]">Starts at AED 35. Cancel
                         anytime.</h4>
                     <h6 class="text-white text-md text-center mt-3 ">Ready to watch? Enter your email to create or
@@ -81,22 +83,27 @@
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
 
-    <!-- full section -->
-    <section>
-     <div class="w-full h-auto bg-indigo-950">
-            <!-- carousel div -->
-            <div>
-                <h1>l</h1>
+            <svg class="top-curve" viewBox="0 0 100 12" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+                        <stop offset="1%" stop-color="#e50914" stop-opacity="0.5" />
+                        <stop offset="50%" stop-color="#ff0055" stop-opacity="1" />
+                        <stop offset="99%" stop-color="#e50914" stop-opacity="1" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,10 Q50,-9 100,10" stroke="url(#grad1)" stroke-width="1" fill="none" />
+            </svg>
+
+        </section>
+
+        <!-- full section -->
+        <section class="w-full h-auto">
+            <div class="bg-black" id="second">
+                <h2>tresndin</h2>
             </div>
-     </div>
-
-
-
-    </section>
-    <!-- last div -->
+        </section>
+        <!-- last div -->
     </div>
 </body>
 
