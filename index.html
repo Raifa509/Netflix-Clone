@@ -41,7 +41,8 @@
                     </div>
                     <div class="flex items-center md:space-x-4 space-x-2">
                         <div class="dropdown">
-                            <button class="border md:ms-5 md:px-3 px-2 py-1 dropdown-toggle text-white flex items-center"
+                            <button
+                                class="border md:ms-5 md:px-3 px-2 py-1 dropdown-toggle text-white flex items-center"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false"
                                 style="border-radius: 0.2rem; border-color: gray !important;">
                                 <span class="md:me-2 me-1">
@@ -69,7 +70,8 @@
                     <h1 class="text-white md:text-6xl text-3xl text-center font-bold tracking-tight">
                         Unlimited movies, TV shows, and more
                     </h1>
-                    <h4 class="text-white md:text-xl text-base md:font-bold font-semibold text-center md:leading-[75px] leading-[50px]">
+                    <h4
+                        class="text-white md:text-xl text-base md:font-bold font-semibold text-center md:leading-[75px] leading-[50px]">
                         Starts at AED 35. Cancel anytime.
                     </h4>
                     <h6 class="text-white md:text-md text-sm text-center md:mt-3 mb-3">
@@ -89,44 +91,105 @@
             </div>
         </section>
 
-        <!-- New Section-->
+        <!-- Trending Section-->
         <section class="w-full min-h-screen bg-black relative" id="second">
-            <svg class="top-curve w-full absolute -top-[1px] z-10" viewBox="0 0 100 12" preserveAspectRatio="none">
+            <!-- For screens md and above -->
+            <svg class="top-curve w-full absolute -top-[1px] z-10 hidden md:block" viewBox="0 0 100 12"
+                preserveAspectRatio="none">
                 <defs>
-                    <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+                    <linearGradient id="grad1-lg" x1="0%" x2="100%" y1="0%" y2="0%">
                         <stop offset="20%" stop-color="#E30B5C" stop-opacity="0.3" />
                         <stop offset="60%" stop-color="#FF0000" stop-opacity="1" />
                         <stop offset="70%" stop-color="#FF4433" stop-opacity="1" />
                         <stop offset="80%" stop-color="#E30B5C" stop-opacity="0.3" />
                     </linearGradient>
                 </defs>
-                <path d="M0,10 Q50,-9 100,10" stroke="url(#grad1)" stroke-width="1" fill="none" />
+                <path d="M0,10 Q50,-9 100,10" stroke="url(#grad1-lg)" stroke-width="1" fill="none" />
             </svg>
+
+            <!-- For screens below md -->
+            <svg class="top-curve w-full absolute -top-[1px] z-10 block md:hidden" viewBox="0 0 100 12"
+                preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="grad1-sm" x1="0%" x2="100%" y1="0%" y2="0%">
+                        <stop offset="20%" stop-color="#E30B5C" stop-opacity="0.3" />
+                        <stop offset="60%" stop-color="#FF0000" stop-opacity="1" />
+                        <stop offset="70%" stop-color="#FF4433" stop-opacity="1" />
+                        <stop offset="80%" stop-color="#E30B5C" stop-opacity="0.3" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,10 Q50,-2 100,10" stroke="url(#grad1-sm)" stroke-width="1" fill="none" />
+            </svg>
+
+
             <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-0 w-full h-[80px]"
                 style="background: radial-gradient(ellipse at center, rgba(0, 102, 255, 0.35) 0%, rgba(0, 102, 255, 0.15) 30%, transparent 60%);">
             </div>
-            <div class="relative z-5 pt-20 px-40">
-                <h2 class="text-white font-semibold text-2xl">Trending Now</h2>
+            <div class="relative z-5 pt-20 px-4 md:!px-40">
+                <h2 class="text-white font-semibold md:text-2xl text-lg">Trending Now</h2>
             </div>
-         <div class="pt-10 px-40" >
-                <div class="grid grid-cols-5">
-                    <div class="">
-                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+            <div class="pt-10 md:px-40 px-6 ">
+                <div class="grid md:grid-cols-5 grid-cols-2 md:gap-0 gap-4">
+                    <div
+                        class="relative inline-block overflow-visible group transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt=""
+                            width="180" height="200" class="block" />
+                        <!-- SVG overlay -->
+                        <svg class="absolute -bottom-1 -left-6 z-10" width="120" height="120"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <text md:x="-2" x="4" y="80" fill="black" stroke="white" md:font-size="100" font-size="60"
+                                font-weight="900">1</text>
+                        </svg>
                     </div>
-                     <div class="">
-                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+
+
+                    <div
+                        class="relative inline-block overflow-visible group transition-transform duration-300 ease-in-out hover:scale-105">
+                        <img src="https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABegT-cLaaUn5DEsSxbQV7Gcs2R8n10BTmC8IS5vd6GoZPZS0ZxpZnLV3wyMQTp7CDcWhnEP5ePKXAuj-eSNkn2YI-dezRMMm-oTr0X-RBHn_xcVVAiha01U-kdtavRuNtvWRgQ.jpg?r=d36"
+                            alt="" width="180" height="200" class="block" />
+                        <!-- SVG overlay -->
+                        <svg class="absolute -bottom-1 -left-6 z-10" width="120" height="120"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <text md:x="-2" x="4" y="80" fill="black" stroke="white" md:font-size="100" font-size="60"
+                                font-weight="900">2</text>
+                        </svg>
                     </div>
-                     <div class="">
-                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+
+                    <div
+                        class="relative inline-block overflow-visible group transition-transform duration-300 ease-in-out hover:scale-105 hidden md:inline-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_x0kYE39Z_DEWAp4hlxK0TZrptvW3WtP38iA_11AiNbt7gEBLS911sucn4tJaHZdISs&usqp=CAU"
+                            alt="" width="180" height="200" class="block" />
+                        <!-- SVG overlay -->
+                        <svg class="absolute -bottom-1 -left-6 z-10" width="120" height="120"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <text x="-2" y="80" fill="black" stroke="white" font-size="100" font-weight="900">3</text>
+                        </svg>
                     </div>
-                     <div class="">
-                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+
+                    <div
+                        class="relative inline-block overflow-visible group transition-transform duration-300 ease-in-out hover:scale-105 hidden md:inline-block">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIM0hDpJGk54fJj4PzlXrvb4GJlL6GRlxmWg&s"
+                            alt="" width="180" height="200" class="block" />
+                        <!-- SVG overlay -->
+                        <svg class="absolute -bottom-1 -left-6 z-10" width="120" height="120"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <text x="-2" y="80" fill="black" stroke="white" font-size="100" font-weight="900">4</text>
+                        </svg>
                     </div>
-                    <div class="">
-                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+
+                    <div
+                        class="relative inline-block overflow-visible group transition-transform duration-300 ease-in-out hover:scale-105 hidden md:inline-block">
+                        <img src="https://111.90.159.132/wp-content/uploads/2024/05/oRvFzcagAcC6Q317xtV7QXzwBnj.jpg"
+                            alt="" width="180" height="200" class="block" />
+                        <!-- SVG overlay -->
+                        <svg class="absolute -bottom-1 -left-6 z-10" width="120" height="120"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <text x="-2" y="80" fill="black" stroke="white" font-size="100" font-weight="900">5</text>
+                        </svg>
                     </div>
+
                 </div>
-         </div>
+            </div>
         </section>
 
         <!-- last div -->
