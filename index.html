@@ -26,28 +26,28 @@
 </head>
 
 <body>
-    
+
     <div>
-        <!-- home -->
-        <section class="relative w-full min-h-[120vh]">
-            <div class="w-full min-h-[120vh] bg-[url(./media/home_img.jpg)] absolute inset-0 bg-cover z-0"></div>
-            <!-- black overlay -->
-            <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/80 via-black/65 to-black/80"></div>
-            <!-- nav section -->
-            <div class="w-full h-[15%] relative z-10 px-4">
-                <div class="max-w-7xl mx-auto flex justify-between items-center w-full px-4 md:px-8">
-                    <div class="">
-                        <img src="./media/netflix_name.png" alt="" width="190px" />
+        <!-- Home Section -->
+        <section class="relative w-full md:h-screen h-[35rem]">
+            <div class="w-full h-screen bg-[url(./media/home_img.jpg)] absolute inset-0 bg-cover z-0"></div>
+            <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/80 via-black/70 to-black/100"></div>
+
+            <!-- Navigation -->
+            <div class="w-full h-[15%] relative z-10 md:px-4 px-2">
+                <div class="max-w-7xl mx-auto flex justify-between items-center w-full px-2 md:px-8 py-2 md:py-0">
+                    <div>
+                        <img src="./media/netflix_name.png" alt="Netflix" class="w-[100px]  md:w-[190px]" />
                     </div>
-                    <div class="flex items-center space-x-4">
+                    <div class="flex items-center md:space-x-4 space-x-2">
                         <div class="dropdown">
-                            <button class="border ms-5 px-3 py-1 dropdown-toggle text-white flex items-center"
+                            <button class="border md:ms-5 md:px-3 px-2 py-1 dropdown-toggle text-white flex items-center"
                                 type="button" data-bs-toggle="dropdown" aria-expanded="false"
                                 style="border-radius: 0.2rem; border-color: gray !important;">
-                                <span class="me-2">
+                                <span class="md:me-2 me-1">
                                     <img src="./media/translate.png" alt="" width="16px" />
                                 </span>
-                                <span class="me-2 text-sm">English</span>
+                                <span class="hidden me-2 text-sm md:inline">English</span>
                             </button>
                             <ul class="dropdown-menu text-center" style="width: 132px; min-width: unset;">
                                 <li><a class="dropdown-item text-black" href="#">العربية</a></li>
@@ -55,54 +55,80 @@
                             </ul>
                         </div>
                         <button
-                            class="bg-red-600 font-semibold text-sm text-white px-[1rem] py-[0.35rem] text-center hover:bg-red-700 transition"
+                            class="bg-red-600 md:font-semibold text-xs md:text-sm text-white md:px-[1rem] px-[15px] px-[0.1rem] py-[0.35rem] text-center hover:bg-red-700 transition"
                             style="border-radius: 0.3rem;">
                             Sign In
                         </button>
                     </div>
                 </div>
             </div>
-            <!-- Heading section -->
-            <div class="px-2 py-1 h-auto " id="home-head">
+
+            <!-- Headings and Email -->
+            <div class="px-4 py-1 h-auto mb-0 absolute left-[5%] w-[90%] sm:left-1/4 sm:w-1/2 top-[27%] md:top-[35%]">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-white text-6xl text-center font-bold tracking-tight">Unlimited movies, TV shows, and
-                        more</h1>
-                    <h4 class="text-white text-xl font-bold text-center leading-[75px]">Starts at AED 35. Cancel
-                        anytime.</h4>
-                    <h6 class="text-white text-md text-center mt-3 ">Ready to watch? Enter your email to create or
-                        restart
-                        your membership.</h6>
-                    <div class="flex mt-3 w-full item-center justify-center">
+                    <h1 class="text-white md:text-6xl text-3xl text-center font-bold tracking-tight">
+                        Unlimited movies, TV shows, and more
+                    </h1>
+                    <h4 class="text-white md:text-xl text-base md:font-bold font-semibold text-center md:leading-[75px] leading-[50px]">
+                        Starts at AED 35. Cancel anytime.
+                    </h4>
+                    <h6 class="text-white md:text-md text-sm text-center md:mt-3 mb-3">
+                        Ready to watch? Enter your email to create or restart your membership.
+                    </h6>
+                    <div class="flex mt-1 w-full items-center justify-center md:flex-row flex-col gap-3 md:gap-0">
                         <input type="email" placeholder="Email address"
-                            class="w-[50%] px-3 py-3 bg-transparent border border-gray-600 !border-[#8c8c8c] placeholder:opacity-95 text-white placeholder-[#8c8c8c] text-semibold rounded-md focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-1 focus:ring-offset-black" />
+                            class="md:w-[50%]  w-full px-3 py-3 bg-transparent border border-gray-600 !border-[#8c8c8c] placeholder:opacity-95 text-white placeholder-[#8c8c8c] text-semibold rounded-md focus:outline-none focus:ring-1 focus:ring-white focus:ring-offset-1 focus:ring-offset-black" />
                         <button
-                            class="bg-red-600 font-semibold text-2xl text-white px-[1rem] py-[0.35rem] text-center hover:bg-red-700 transition w-[25%] flex items-center justify-center mx-2"
+                            class="bg-red-600 font-semibold md:text-2xl 
+                            text-base text-white px-3 py-[0.8rem] text-center hover:bg-red-700 transition md:w-[25%] w-[50%] flex items-center justify-center "
                             style="border-radius: 0.3rem;">
                             Get Started <span><img src="./media/chevron.png" alt="" width="15px"></span>
                         </button>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <svg class="top-curve" viewBox="0 0 100 12" preserveAspectRatio="none">
+        <!-- New Section-->
+        <section class="w-full min-h-screen bg-black relative" id="second">
+            <svg class="top-curve w-full absolute -top-[1px] z-10" viewBox="0 0 100 12" preserveAspectRatio="none">
                 <defs>
                     <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
-                        <stop offset="1%" stop-color="#e50914" stop-opacity="0.5" />
-                        <stop offset="50%" stop-color="#ff0055" stop-opacity="1" />
-                        <stop offset="99%" stop-color="#e50914" stop-opacity="1" />
+                        <stop offset="20%" stop-color="#E30B5C" stop-opacity="0.3" />
+                        <stop offset="60%" stop-color="#FF0000" stop-opacity="1" />
+                        <stop offset="70%" stop-color="#FF4433" stop-opacity="1" />
+                        <stop offset="80%" stop-color="#E30B5C" stop-opacity="0.3" />
                     </linearGradient>
                 </defs>
                 <path d="M0,10 Q50,-9 100,10" stroke="url(#grad1)" stroke-width="1" fill="none" />
             </svg>
-
-        </section>
-
-        <!-- full section -->
-        <section class="w-full h-auto">
-            <div class="bg-black" id="second">
-                <h2>tresndin</h2>
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 z-0 w-full h-[80px]"
+                style="background: radial-gradient(ellipse at center, rgba(0, 102, 255, 0.35) 0%, rgba(0, 102, 255, 0.15) 30%, transparent 60%);">
             </div>
+            <div class="relative z-5 pt-20 px-40">
+                <h2 class="text-white font-semibold text-2xl">Trending Now</h2>
+            </div>
+         <div class="pt-10 px-40" >
+                <div class="grid grid-cols-5">
+                    <div class="">
+                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+                    </div>
+                     <div class="">
+                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+                    </div>
+                     <div class="">
+                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+                    </div>
+                     <div class="">
+                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+                    </div>
+                    <div class="">
+                        <img src="https://i.pinimg.com/736x/8a/e5/d5/8ae5d52e094e80483c2fc2786a21c5c1.jpg" alt="" width="180px" height="200px">
+                    </div>
+                </div>
+         </div>
         </section>
+
         <!-- last div -->
     </div>
 </body>
