@@ -13,3 +13,10 @@
   height: 60px;
   z-index: 2;
 }
+
+@media (max-width: 768px) {
+    svg text {
+      font-size: 70px !important;
+    }
+}
+
